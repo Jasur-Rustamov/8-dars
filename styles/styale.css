@@ -1,0 +1,250 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     font-family: 'League Spartan';
+     background-color: #EFFAFA;
+ }
+
+ .container {
+     max-width: 1110px;
+     margin: 0 auto;
+     width: 100%;
+ }
+
+ .header {
+     width: 100%;
+     height: 156px;
+     background-color: rgba(92, 165, 165, 1);
+     background-image: url('../images/png/bg.png');
+     background-repeat: no-repeat;
+     background-position: right;
+     background-size: cover;
+ }
+
+ .main_container {
+     margin-top: 10px;
+ }
+
+ .job {
+     background-color: #FFFF;
+     border-radius: 5px;
+     box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
+     padding: 32px 40px;
+
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin-bottom: 24px;
+
+ }
+ .job_br{
+    border-left: 5px solid rgba(92, 165, 165, 1);
+ }
+
+ .jon_info {
+     display: flex;
+     align-items: center;
+     gap: 24px;
+
+ }
+
+ .jon_info .logo img {
+     width: 88px;
+     height: 88px;
+ }
+
+ .text_info .head_info {
+     display: flex;
+     align-items: center;
+     gap: 15px;
+     margin-bottom: 10px;
+ }
+
+ .head_info a {
+     color: rgba(92, 165, 165, 1);
+     font-weight: 700;
+     font-size: 18px;
+     text-decoration: none;
+ }
+
+ .head_info div {
+     display: flex;
+     gap: 8px;
+ }
+
+ .head_info div span {
+     background-color: rgba(92, 165, 165, 1);
+     border-radius: 12px;
+     font-weight: 700;
+     color: #FFFF;
+     font-size: 14px;
+     padding: 7px 8px 3px 8px;
+ }
+
+ .head_info div span:last-child {
+     background-color: rgba(43, 57, 57, 1);
+ }
+
+ .text_info .job_title {
+     margin-bottom: 7px;
+ }
+
+ .text_info .job_title h2 {
+     color: rgba(43, 57, 57, 1);
+     font-size: 22px;
+     font-weight: 700;
+     cursor: pointer;
+     transition: all 0.5s;
+ }
+
+ .text_info .job_title h2:hover {
+     color: rgba(92, 165, 165, 1);
+ }
+
+ .text_info .foot_info {
+     display: flex;
+     align-items: center;
+     gap: 18.5px;
+ }
+
+ .foot_info .info {
+     color: rgba(124, 143, 143, 1);
+     font-size: 18px;
+     font-weight: 500;
+ }
+
+ .foot_info .dot {
+     width: 4px;
+     height: 4px;
+     background-color: rgba(124, 143, 143, 1);
+     border-radius: 50%;
+ }
+
+ .job_skills {
+     display: flex;
+     gap: 16px;
+     align-items: center;
+ }
+
+ .job_skills span {
+     background-color: rgba(92, 165, 165, 0.1);
+     color: rgba(92, 165, 165, 1);
+     font-size: 16px;
+     font-weight: 700;
+     border-radius: 4px;
+     padding: 5px 5px 3px 5px;
+     transition: all 0.5s;
+     cursor: pointer;
+ }
+
+ .job_skills span:hover {
+     color: #FFFF;
+     background-color: rgba(92, 165, 165, 1);
+ }
+
+ .search {
+     width: 100%;
+     background: #fff;
+     box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
+     border-radius: 4px;
+     padding: 20px 40px;
+     position: relative;
+     top: -40px;
+
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+
+ .search span {
+     cursor: pointer;
+     color: rgba(92, 165, 165, 1);
+     font-size: 16px;
+ }
+
+ .search input {
+     width: 90%;
+     border: none;
+     font-size: 20px;
+     color: rgba(92, 165, 165, 1);
+
+ }
+
+ .search input:focus {
+     outline: none;
+ }
+
+
+ @media screen and (max-width: 1200px) {
+     .container {
+         max-width: 87%;
+     }
+ }
+
+
+ @media screen and (max-width: 992px) {
+     .job {
+         padding: 20px 20px;
+         gap: 40px;
+     }
+
+     .job_info {
+         gap: 16px;
+     }
+
+     .text_info .head_info {
+         margin-bottom: 5px;
+     }
+
+     .text_info .foot_info {
+         gap: 10px;
+     }
+
+     .job_skills {
+         flex-wrap: wrap;
+         gap: 10px;
+     }
+
+ }
+
+
+ @media screen and (max-width: 768px) {
+     .jon_info {
+         flex-direction: column;
+         align-items: flex-start;
+         gap: 10px;
+         justify-content: flex-end;
+     }
+ }
+
+ @media screen and (max-width: 576px) {
+     .job {
+         position: relative;
+         padding: 32px 24px 24px 24px;
+
+         flex-direction: column;
+         align-items: flex-start;
+         margin-bottom: 40px;
+
+         gap: 15px;
+     }
+
+     .job .logo {
+         position: absolute;
+         top: -25px;
+
+     }
+
+     .job .logo img {
+         width: 48px;
+         height: 48px;
+     }
+     .job_skills{
+        border-top: 1px solid rgba(183, 196, 196, 1);
+        padding-top: 16px;
+     }
+ }
